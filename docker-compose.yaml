@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+    environment:
+      - ENV=development
+    command: ["python", "src/main.py"]
