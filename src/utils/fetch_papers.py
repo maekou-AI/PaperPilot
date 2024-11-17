@@ -57,7 +57,7 @@ def fetch_arxiv_papers(query, max_results=5):
 
     # 日付を取得
     today = datetime.now()
-    yesterday = today - timedelta(days=7)
+    yesterday = today - timedelta(days=1)
 
     # フィルタリングクエリの作成
     date_range = f"{yesterday.strftime('%Y%m%d')} TO {today.strftime('%Y%m%d')}"
