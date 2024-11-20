@@ -22,4 +22,8 @@ jobs:
                 pip install -r requirements.txt
 
             - name: Run script
-              run: python src/main.py
+              env:
+                LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
+                USER_ID: ${{ secrets.USER_ID }}
+              run: |
+                python src/main.py
