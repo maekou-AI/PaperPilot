@@ -18,7 +18,7 @@ def main():
 
     # Arxivからの論文収集
     query_arxiv = "Genomics"
-    arxiv_papers = fetch_arxiv_papers(query_arxiv, max_results=3)
+    arxiv_papers = fetch_arxiv_papers(query_arxiv, max_results=10)
     arxiv_message = "Arxiv:\n"
     if arxiv_papers:
         for paper in arxiv_papers:
